@@ -8,7 +8,6 @@
     padding: 10px 28px;
     font-size: 1.08em;
     text-decoration: none;
-    transition: background 0.25s, box-shadow 0.25s, transform 0.15s;
     box-shadow: 0 4px 16px rgba(255,140,0,0.15);
     cursor: pointer;
     display: inline-flex;
@@ -17,7 +16,7 @@
     letter-spacing: 0.5px;
     outline: none;
 }
-}
+
 .btn-matricula:hover {
     background: linear-gradient(90deg, #e67c00 80%, #ff9800 100%);
     box-shadow: 0 6px 24px rgba(255,140,0,0.22);
