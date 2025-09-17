@@ -1,0 +1,227 @@
+/* Blocos de cursos */
+.cursos-blocos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin: 32px 0;
+}
+.curso-bloco {
+    background: #f5f6fa;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+    padding: 32px 24px;
+    min-width: 180px;
+    max-width: 220px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #1a237e;
+    font-weight: 500;
+    margin-bottom: 0;
+    transition: box-shadow 0.2s;
+}
+.curso-bloco:hover {
+    box-shadow: 0 4px 16px rgba(26,35,126,0.18);
+    background: #e3e7fa;
+}
+/* Menu responsivo */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1a237e;
+    padding: 0 24px;
+    height: 60px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ff9800;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+.nav-list li a:hover {
+    color: #ff9800;
+}
+@media (max-width: 800px) {
+    .nav-list {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #1a237e;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+    .nav-list.active {
+        display: flex;
+    }
+    .nav-list li {
+        border-bottom: 1px solid #ff9800;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background: #1a237e; /* azul escuro */
+}
+.banner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.banner img.active {
+    opacity: 1;
+}
+header {
+    background: #1a237e; /* azul escuro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.cursos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+.curso {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(255,140,0,0.15); /* sombra laranja */
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid #ff9800; /* borda laranja */
+}
+.curso h2 {
+    color: #ff9800; /* laranja */
+}
+.horarios {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #1a237e;
+}
+        footer {
+            background: #1a237e;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            /* Removido position: fixed para evitar sobreposição */
+        }
+h1#galeria {
+    text-align: center;
+}
+
+div.video {
+  display: flex;
+  justify-content: center; /* Centraliza na horizontal */
+  gap: 20px;    
+}
+
+div.imagens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+  gap: 10px; /* Espaçamento entre imagens */
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+img.imagem {
+  position: relative;
+  width: 100%;
+   /* Mantém proporção 1:1 */
+  overflow: hidden;
+  border-radius: 8px; /* Opcional: cantos arredondados */
+}
+
+.imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Preenche o quadrado sem distorcer */
+  display: block;
+}
+
+img#cursos {
+  display: block;         /* Faz com que possamos centralizar usando margin */
+  margin: 0 auto;         /* Centraliza horizontalmente */
+  width: 600px;           /* Diminui a largura da imagem */
+  height: auto;           /* Mantém a proporção da imagem */
+}
+
+#link-cursos {
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+}
+
+img.parceiros {
+    border-radius: 20px;
+    width: 150px;
+}
+
+ul.parceiros {
+    list-style-type: none;
+    display: block;
+    display: flex;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas por linha */
+  gap: 20px;                             /* Espaço entre os ícones */
+  justify-items: center;                /* Centraliza os ícones nas células */
+  max-width: 600px;                     /* Largura máxima do grid */
+  margin: 40px auto;                    /* Centraliza o grid na página */
+}
+
+.grid-container img {
+  width: 200px;                          /* Tamanho dos ícones */
+  height: auto;
+  border-radius: 50px;
+}
