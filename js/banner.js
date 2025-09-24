@@ -6,16 +6,22 @@ document.addEventListener('DOMContentLoaded', function() {
     let current = 0;
     let timer;
 
+
+    let isTransitioning = false;
     function showBanner(index, prev = null) {
+        if (isTransitioning) return;
+        isTransitioning = true;
         images.forEach((img, i) => {
             if (i === index) {
-                img.style.transition = 'opacity 1.2s cubic-bezier(0.4,0,0.2,1)';
+                img.style.transition = 'opacity 1.3s cubic-bezier(0.4,0,0.2,1), transform 1.3s cubic-bezier(0.4,0,0.2,1)';
                 img.style.opacity = 1;
+                img.style.transform = 'scale(1.04)';
                 img.style.zIndex = 2;
                 img.classList.add('active');
             } else {
-                img.style.transition = 'opacity 1.2s cubic-bezier(0.4,0,0.2,1)';
+                img.style.transition = 'opacity 1.3s cubic-bezier(0.4,0,0.2,1), transform 1.3s cubic-bezier(0.4,0,0.2,1)';
                 img.style.opacity = 0;
+                img.style.transform = 'scale(1)';
                 img.style.zIndex = 1;
                 img.classList.remove('active');
             }
@@ -24,11 +30,16 @@ document.addEventListener('DOMContentLoaded', function() {
         if (prev !== null && prev !== index) {
             setTimeout(() => {
                 images[prev].style.zIndex = 1;
-            }, 1200);
+                isTransitioning = false;
+            }, 1300);
+        } else {
+            setTimeout(() => { isTransitioning = false; }, 1300);
         }
     }
 
+
     function nextBanner() {
+        if (isTransitioning) return;
         const prev = current;
         current = (current + 1) % images.length;
         showBanner(current, prev);

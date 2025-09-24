@@ -60,3 +60,15 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Nada
+
+------------------------
+## [1.0.5] - 2025-09-24
+### Adicionado
+- Nada
+
+### Corrigido
+- Ajuste no menu responsivo
+- Melhora de animação de banner
+
+### Removido
+- Nada
