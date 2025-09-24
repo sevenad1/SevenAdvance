@@ -1,12 +1,3 @@
-## [versão] - AAAA-MM-DD
-### Adicionado
-- ...
-### Corrigido
-- ...
-### Removido
-- ...
-
--------------------------------------------------
 # CHANGELOG
 
 Todas as alterações relevantes deste projeto serão listadas aqui.
