@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Seven Advance</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+	  <style>
+	  .video {
+		  display: flex;
+		  flex-wrap: wrap;
+		  gap: 16px;
+		  justify-content: center;
+	  }
+	  .video video {
+		  max-width: 100%;
+		  height: auto;
+		  border-radius: 8px;
+		  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+	  }
+	  h2 {
+		  text-align: center;
+	  }
+	  /* Menu responsivo */
+	  .menu-toggle {
+		  display: none;
+		  background: none;
+		  border: none;
+		  font-size: 2em;
+		  cursor: pointer;
+		  margin-left: 12px;
+	  }
+	  .nav-list {
+		  gap: 18px;
+		  list-style: none;
+		  margin: 0;
+		  padding: 0;
+		  align-items: center;
+	  }
+	  @media (max-width: 800px) {
+		  .video {
+			  flex-direction: column;
+			  align-items: center;
+		  }
+		  .video video {
+			  width: 100vw;
+			  max-width: 98vw;
+		  }
+		  .menu-toggle {
+			  display: block;
+		  }
+		  .nav-list {
+			  display: none;
+			  flex-direction: column;
+			  position: absolute;
+			  top: 60px;
+			  left: 0;
+			  width: 100vw;
+			  z-index: 10;
+		  }
+		  .nav-list.active {
+			  display: flex;
+		  }
+		  .navbar {
+			  position: relative;
+		  }
+	  }
+	  </style>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="logo"> 
+				<img src="img/Logo.png" alt="Logo Seven Advance Cascavel" style="height:40px;width:40px;border-radius:50%;object-fit:cover;">
+				Seven Advance
+			</div>
+			<button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+			<ul class="nav-list">
+			   <li><a href="index.html">Início</a></li>
+			   <li><a href="fotos.html">Fotos</a></li>
+			   <li><a href="quem-somos.html">Quem Somos</a></li>
+			   <li><a href="cursos.html">Cursos</a></li>
+			   <li><a href="parceiros.html">Parceiros</a></li>
+			   <li><a href="contato.html">Contato</a></li>
+		   </ul>
+		</nav>
+	</header>
+	<main>
+		<section id="media">
+			<h1 id="galeria"><strong>Galeria de Fotos</strong></h1>
+			<div class="imagens">
+				<img src="img/FOTO - 1.jpg" alt="" class="imagem">
+				<img src="img/FOTO - 2.jpg" alt="" class="imagem">
+				<img src="img/FOTO - 3.jpg" alt="" class="imagem">
+				<img src="img/FOTO - 4.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 10.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 11.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 12.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 13.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 14.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 15.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 16.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 17.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 18.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 19.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 20.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 21.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 22.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 24.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 26.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 27.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 28.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 29.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 30.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 31.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 32.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 33.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 34.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 35.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 36.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 5.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 6.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 7.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 8.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA - 9.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA -25.jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA -28 .jpg" alt="" class="imagem">
+				<img src="img/FOTO - SALA DE AULA 23.jpg" alt="" class="imagem">
+				<img src="img/FOTO PROMOCIONAL - AMIGO DA ONÇA - 1.jpg" alt="" class="imagem">
+			</div>
+			<br>
+			<h2>Vídeos</h2>
+			<div class="video">
+				<video src="img/FOTO - SALA DE AULA.mp4" controls></video>
+				<video src="img/FOTO - SALA DE AULA 2.mp4" controls></video>
+			</div>
+		</section>
+		<footer style="margin-top:32px;">
+			&copy; 2025 Seven Advance. Todos os direitos reservados.
+			<div class="social" style="margin-top:16px; display: flex; justify-content: center; gap: 24px;">
+				<a href="https://www.instagram.com/sevenadvance1" target="_blank" aria-label="Instagram SevenAdvance" style="display:inline-block;">
+					<!-- ...SVG... -->
+				</a>
+				<a href="https://www.facebook.com/sevenadvance7" target="_blank" aria-label="Facebook SevenAdvance" style="display:inline-block;">
+					<!-- ...SVG... -->
+				</a>
+			</div>
+			<div id="creditos-site" style="margin-top:18px; text-align:center; font-size:0.95em; color:#888;">
+				<!-- Editar aqui: Créditos/Criadores do site -->
+				<span>Criado por <strong>Seu Nome</strong> e equipe. <em>(Edite este texto para os créditos do site)</em></span>
+			</div>
+		</footer>
+	</main>
+</body>
+<script>
+// Menu responsivo
+document.addEventListener('DOMContentLoaded', function() {
+	const menuToggle = document.querySelector('.menu-toggle');
+	const navList = document.querySelector('.nav-list');
+	if (menuToggle && navList) {
+		menuToggle.addEventListener('click', () => {
+			navList.classList.toggle('active');
+		});
+		// Fecha o menu ao clicar em um link (opcional)
+		navList.querySelectorAll('a').forEach(function(link) {
+			link.addEventListener('click', function() {
+				if(window.innerWidth <= 800) {
+					navList.classList.remove('active');
+				}
+			});
+		});
+	}
+});
+</script>
+</html>

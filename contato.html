@@ -1,6 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <style>
+    .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 2em;
+        cursor: pointer;
+        margin-left: 12px;
+    }
+    .nav-list {
+        gap: 18px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    @media (max-width: 800px) {
+        .menu-toggle {
+            display: block;
+        }
+        .nav-list {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100vw;
+            z-index: 10;
+        }
+        .nav-list.active {
+            display: flex;
+        }
+        .navbar {
+            position: relative;
+        }
+    }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - SevenAdvance</title>
@@ -14,15 +51,38 @@
                 <img src="img/Logo.png" alt="Logo Seven Advance Cascavel" style="height:40px;width:40px;border-radius:50%;object-fit:cover;">
                 Seven Advance
             </div>
+            <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
             <ul class="nav-list">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="quem-somos.html">Quem Somos</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="parceiros.html">Parceiros</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+               <li><a href="index.html">Início</a></li>
+               <li><a href="fotos.html">Fotos</a></li>
+               <li><a href="quem-somos.html">Quem Somos</a></li>
+               <li><a href="cursos.html">Cursos</a></li>
+               <li><a href="parceiros.html">Parceiros</a></li>
+               <li><a href="contato.html">Contato</a></li>
+           </ul>
         </nav>
     </header>
+</body>
+<script>
+// Menu responsivo
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    if (menuToggle && navList) {
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+        // Fecha o menu ao clicar em um link (opcional)
+        navList.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                if(window.innerWidth <= 800) {
+                    navList.classList.remove('active');
+                }
+            });
+        });
+    }
+});
+</script>
     <main>
     <h1>Contato</h1>
     <p>Entre em contato conosco para mais informações sobre nossos cursos e parcerias.</p>
