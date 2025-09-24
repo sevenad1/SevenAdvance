@@ -107,3 +107,17 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Nada
+
+------------------------
+## [1.0.10] - 2025-09-24
+### Adicionado
+- Nada
+
+### Corrigido
+- Ajuste no menu responsivo em dispositivos móveis
+- Melhora de Qualidade grafica em imagens
+- Conserto do menu responsivo
+- Ajuste de compatibilidade em imagens
+
+### Removido
+- Arquivo #menu-responsivo.js
