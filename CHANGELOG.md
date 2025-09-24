@@ -28,3 +28,12 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 - Remoção de função: <autoplay> em videos
 
 ------------------------
+## [1.0.2] - 2025-09-24
+### Adicionado
+- Nada
+### Corrigido
+- Nada
+### Removido
+- Texto de abertura do #index.html
+
+------------------------
