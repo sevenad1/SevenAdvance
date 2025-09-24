@@ -209,26 +209,5 @@ document.addEventListener('DOMContentLoaded', function() {
 			   <span>Criado por <strong>Otávio Lemos Morais</strong> e <strong>Ildo José Pertile</strong></span>
 	       </div>
        </footer>
-		<script src="js/banner.js"></script>
-		<script>
-			// Menu responsivo
-			document.addEventListener('DOMContentLoaded', function() {
-				const menuToggle = document.querySelector('.menu-toggle');
-				const navList = document.querySelector('.nav-list');
-				if (menuToggle && navList) {
-					menuToggle.addEventListener('click', () => {
-						navList.classList.toggle('active');
-					});
-					// Fecha o menu ao clicar em um link (opcional)
-					navList.querySelectorAll('a').forEach(function(link) {
-						link.addEventListener('click', function() {
-							if(window.innerWidth <= 800) {
-								navList.classList.remove('active');
-							}
-						});
-					});
-				}
-			});
-		</script>
 </body>
 </html>

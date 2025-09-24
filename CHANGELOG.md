@@ -72,3 +72,14 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Nada
+
+------------------------
+## [1.0.6] - 2025-09-24
+### Adicionado
+- Nada
+
+### Corrigido
+- Conserto do botão em menu responsivo em dispositivos móveis
+
+### Removido
+- Nada
