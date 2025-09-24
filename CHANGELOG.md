@@ -51,3 +51,12 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 - Nada
 
 ------------------------
+## [1.0.4] - 2025-09-24
+### Adicionado
+- Nada
+
+### Corrigido
+- Ajuste em imagens no #parceiros.html
+
+### Removido
+- Nada

@@ -88,13 +88,57 @@ document.addEventListener('DOMContentLoaded', function() {
         <p>Conheça nossos parceiros e colabore conosco para transformar vidas.</p>
         <div>
             <h2>Instituições Parceiras</h2>
-            <div class="grid-container">
-                <a href="https://www.unoeste.br/ead/polos-de-apoio/pr/cascavel/seven-advance_115" target="_blank"><img src="img/unoeste.png" alt="Logo Unoeste"></a>
-
-                <a href="https://ibrep.corretorcursoadistancia.com.br" target="_blank"><img src="img/iBREP.png" alt="Logo iBREP"></a>
-            </div>         
+            <div class="parceiros-grid">
+                <a href="https://www.unoeste.br/ead/polos-de-apoio/pr/cascavel/seven-advance_115" target="_blank" class="parceiro-link"><img src="img/unoeste.png" alt="Logo Unoeste"></a>
+                <a href="https://ibrep.corretorcursoadistancia.com.br" target="_blank" class="parceiro-link"><img src="img/iBREP.png" alt="Logo iBREP"></a>
+            </div>
         </div>
     </main>
+    <style>
+    .parceiros-grid {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 24px 0 0 0;
+    }
+    .parceiro-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        padding: 12px 18px;
+        transition: box-shadow 0.2s;
+        max-width: 180px;
+        width: 100%;
+    }
+    .parceiro-link:hover {
+        box-shadow: 0 4px 24px rgba(26,35,126,0.13);
+    }
+    .parceiro-link img {
+        max-width: 140px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+    @media (max-width: 700px) {
+        .parceiros-grid {
+            flex-direction: column;
+            gap: 18px;
+        }
+        .parceiro-link {
+            max-width: 90vw;
+            padding: 10px 0;
+        }
+        .parceiro-link img {
+            max-width: 70vw;
+        }
+    }
+    </style>
     <footer>
         &copy; 2025 SevenAdvance. Todos os direitos reservados.<br>
         <div class="social" style="margin-top:16px; display: flex; justify-content: center; gap: 24px;">
