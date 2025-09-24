@@ -31,9 +31,23 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 ## [1.0.2] - 2025-09-24
 ### Adicionado
 - Nada
+
 ### Corrigido
 - Nada
+
 ### Removido
 - Texto de abertura do #index.html
+
+------------------------
+## [1.0.3] - 2025-09-24
+### Adicionado
+- Nome dos desenvolvedores no rodapé
+
+### Corrigido
+- Erro na apresentação dos banners
+- Melhora na transição dos banners
+
+### Removido
+- Nada
 
 ------------------------
