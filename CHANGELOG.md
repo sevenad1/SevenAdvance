@@ -121,3 +121,14 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Arquivo #menu-responsivo.js
+
+------------------------
+## [1.0.11] - 2025-10-01
+### Adicionado
+- Nada
+
+### Corrigido
+- Número de telefone ajustado
+
+### Removido
+- Nada
