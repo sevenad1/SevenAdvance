@@ -132,3 +132,15 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Nada
+
+------------------------
+## [1.0.12] - 2025-10-01
+### Adicionado
+- Pagina App
+- App no menu
+
+### Corrigido
+- Erro no rodapé
+
+### Removido
+- Nada

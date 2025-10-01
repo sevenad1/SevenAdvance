@@ -40,9 +40,10 @@
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos - SevenAdvance</title>
+    <title>App - SevenAdvance</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+
 </head>
 <body style="background:#fff;">
     <header>
@@ -53,29 +54,27 @@
             </div>
             <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
             <ul class="nav-list">
-                <li><a href="index.html">Início</a></li>
+               	<li><a href="index.html">Início</a></li>
 				<li><a href="fotos.html">Fotos</a></li>
 				<li><a href="quem-somos.html">Quem Somos</a></li>
 				<li><a href="cursos.html">Cursos</a></li>
 				<li><a href="parceiros.html">Parceiros</a></li>
-                    <li><a href="app.html">App</a></li>
+                <li><a href="app.html">App</a></li>
 				<li><a href="contato.html">Contato</a></li>
            </ul>
         </nav>
     </header>
-</body>
-<!-- menu-responsivo.js incluído apenas uma vez -->
-    <main>
-        <h1>Nossos Cursos</h1>
-        <p>Confira os cursos disponíveis e escolha o melhor para você!</p>
-        <img id="cursos" src="img/TABELA DE CURSOS -42.jpg" alt="Tabela De Cursos" style="max-width:100%;height:auto;display:block;margin:0 auto;box-shadow:0 2px 16px #0002;border-radius:12px;">
-        <div class="cursos-blocos">
-            <div class="curso-bloco"><a id="link-cursos" href="https://www.metodologiaadvance.com.br/advanceprofissoes/" target="_blank">Todos Os Cursos</a></div>
-        </div>
-    </main>
-    <footer>
-        &copy; 2025 SevenAdvance. Todos os direitos reservados.<br>
-        <div class="social" style="margin-top:16px; display: flex; justify-content: center; gap: 24px;">
+        <main style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:70vh;">
+            <div style="background:#f5f5f5;border-radius:16px;padding:40px 32px;box-shadow:0 2px 16px #0002;max-width:400px;text-align:center;">
+                <h1 style="color:#1a237e;font-size:2.2em;margin-bottom:16px;">Em breve!</h1>
+                <p style="color:#333;font-size:1.2em;margin-bottom:24px;">Estamos trabalhando para concluir essa novidade.<br>Em breve você poderá acessar o App Seven Advance por aqui!</p>
+                <a href="index.html" style="display:inline-block;background:#1a237e;color:#fff;padding:8px 24px;border-radius:8px;font-weight:bold;letter-spacing:1px;text-decoration:none;">Voltar Para O Início</a>
+            </div>
+        </main>
+    </section>
+       <footer>
+	       &copy; 2025 Seven Advance. Todos os direitos reservados.
+	       <div class="social" style="margin-top:16px; display: flex; justify-content: center; gap: 24px;">
             <a href="https://www.instagram.com/sevenadvance1" target="_blank" aria-label="Instagram SevenAdvance" style="display:inline-block;">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="32" height="32" rx="8" fill="#fff"/>
@@ -90,39 +89,9 @@
                 </svg>
             </a>
         </div>
-            <div id="creditos-site" style="margin-top:18px; text-align:center; font-size:0.95em; color:#888;">
-                <span>Criado por <strong>Otávio Lemos Morais</strong> e <strong>Ildo José Pertile</strong></span>
-            </div>
-    </footer>
-<script>
-// Menu responsivo único, instantâneo e sem erro
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navList = document.querySelector('.nav-list');
-    if (menuToggle && navList) {
-        menuToggle.addEventListener('pointerdown', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            navList.classList.toggle('active');
-        });
-        navList.querySelectorAll('a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                if(window.innerWidth <= 800) {
-                    navList.classList.remove('active');
-                }
-            });
-        });
-        document.addEventListener('click', function(e) {
-            if (window.innerWidth <= 800 && navList.classList.contains('active')) {
-                if (!navList.contains(e.target) && e.target !== menuToggle) {
-                    navList.classList.remove('active');
-                }
-            }
-        });
-    }
-});
-</script>
-</footer>
-<script src="js/menu-responsivo.js"></script>
+	       <div id="creditos-site" style="margin-top:18px; text-align:center; font-size:0.95em; color:#888;">
+			   <span>Criado por <strong>Otávio Lemos Morais</strong> e <strong>Ildo José Pertile</strong></span>
+	       </div>
+       </footer>
+	</section>
 </body>
-</html>
