@@ -144,3 +144,14 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Nada
+
+------------------------
+## [1.0.13] - 2025-11-12
+### Adicionado
+- Nada
+
+### Corrigido
+- Troca de números de telefone
+
+### Removido
+- Nada
