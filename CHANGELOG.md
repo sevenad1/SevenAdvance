@@ -235,3 +235,14 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Nada
+
+------------------------
+## [1.0.18] - 2025-11-26
+### Adicionado
+- Grade há noticias
+
+### Corrigido
+- Nada
+
+### Removido
+- Nada
