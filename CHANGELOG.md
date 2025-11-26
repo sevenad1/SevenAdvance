@@ -224,3 +224,14 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Banners antigos
+
+------------------------
+## [1.0.17] - 2025-11-26
+### Adicionado
+- Efeito e expansão para as noticias
+
+### Corrigido
+- Ordem do codigo
+
+### Removido
+- Nada
