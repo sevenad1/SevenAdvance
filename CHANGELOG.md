@@ -168,3 +168,15 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Nada
+
+------------------------
+## [1.0.15] - 2025-11-26
+### Adicionado
+- Sistema de noticias com JSON
+- Organização de arquivos
+
+### Corrigido
+- Sistema das noticias com JSON
+
+### Removido
+- Nada

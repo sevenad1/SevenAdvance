@@ -128,7 +128,7 @@
 				   Fazer Matrícula
 		   </a>
 	   </header>
-
+	   <!-- Setor de Banners -->
 	   <div class="banner">
 		 <a href="#" class="banner-link" id="banner-link-1">
 			 <img class="active" src="img/FACHADA-SEVEN-1.jpg" alt="Seven Advance">
@@ -136,20 +136,15 @@
 		 <a href="https://ibrep.corretorcursoadistancia.com.br" target="_blank" class="banner-link" id="banner-link-2">
 			 <img src="img/Banner-iBREP-preto.png" alt="iBREP">
 		 </a>
-		 <a href="https://www.unoeste.br/ead/polos-de-apoio/pr/cascavel/seven-advance_115"><img src="img/unoeste-banner.png" alt="Unoeste"></a>
+		 <a href="https://www.unoeste.br/ead/polos-de-apoio/pr/cascavel/seven-advance_115" target="_blank"><img src="img/unoeste-banner.png" alt="Unoeste"></a>
+		 <a href="https://empregarja.com/Vaga/?homepage=1&estado=18&cidade=2853"><img src="img/Banner-EMPREGAR-JÁ.png" alt="EMPREGAR JÁ"></a>
 	   </div>
 
 		<!-- Setor de Notícias & Avisos -->
 		<section class="noticias-avisos">
 			<h2>Notícias & Avisos</h2>
-			<div class="noticias-lista">
-				<!-- Exemplo inicial de notícia/aviso -->
-				<article class="noticia">
-					<h3>Férias Coletivas</h3>
-					<p>É hora de uma pausa merecida! A partir de 19/12/2025, todos terão um tempo para descansar, recarregar as energias e voltar com ainda mais motivação. Nos vemos no dia 12/01/2025. Aproveite</p>
-					<span class="data-noticia">26/11/2025</span>
-				</article>
-				<!-- Para adicionar mais notícias, copie e edite o bloco acima -->
+			<div class="noticias-lista" id="noticias-lista">
+				<!-- Notícias serão carregadas automaticamente -->
 			</div>
 		</section>
 	<section class="cursos">
@@ -219,6 +214,33 @@
 		}
 		</style>
 	<main>
+	<script>
+	// Carregar notícias de um arquivo JSON externo
+	fetch('js/noticias.json')
+		.then(response => response.json())
+		.then(noticias => {
+			const lista = document.getElementById('noticias-lista');
+			if (lista && Array.isArray(noticias)) {
+				lista.innerHTML = '';
+				noticias.forEach(noticia => {
+					const artigo = document.createElement('article');
+					artigo.className = 'noticia';
+					artigo.innerHTML = `
+						<h3>${noticia.titulo}</h3>
+						<p>${noticia.texto}</p>
+						<span class="data-noticia">${noticia.data}</span>
+					`;
+					lista.appendChild(artigo);
+				});
+			}
+		})
+		.catch(() => {
+			const lista = document.getElementById('noticias-lista');
+			if (lista) {
+				lista.innerHTML = '<p style="color:#888;text-align:center;">Não foi possível carregar as notícias.</p>';
+			}
+		});
+	</script>
             <h2 id="parceiros">Instituições Parceiras</h2>
             <div class="parceiros-grid">
                 <a href="https://www.unoeste.br/ead/polos-de-apoio/pr/cascavel/seven-advance_115" target="_blank" class="parceiro-link"><img src="img/unoeste.png" alt="Logo Unoeste"></a>
