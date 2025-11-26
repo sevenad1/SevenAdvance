@@ -64,19 +64,23 @@
         </nav>
     </header>
 </body>
-<!-- menu-responsivo.js incluído apenas uma vez -->
     <main>
-        <h1>Parceiros</h1>
-        <p>Conheça nossos parceiros e colabore conosco para transformar vidas.</p>
+        <h1 class="parceiros">Parceiros</h1>
+        <p style="text-align: center">Conheça nossos parceiros e colabore conosco para transformar vidas.</p>
         <div>
-            <h2>Instituições Parceiras</h2>
+            <h2 class="parceiros">Instituições Parceiras</h2>
             <div class="parceiros-grid">
+                <!-- colocar cada parceiro em cada linha -->
                 <a href="https://www.unoeste.br/ead/polos-de-apoio/pr/cascavel/seven-advance_115" target="_blank" class="parceiro-link"><img src="img/unoeste.png" alt="Logo Unoeste"></a>
                 <a href="https://ibrep.corretorcursoadistancia.com.br" target="_blank" class="parceiro-link"><img src="img/iBREP.png" alt="Logo iBREP"></a>
             </div>
         </div>
     </main>
     <style>
+    .parceiros {
+		text-align: center;
+		color: #1a237e
+	}
     .parceiros-grid {
         display: flex;
         gap: 32px;

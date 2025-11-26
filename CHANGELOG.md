@@ -155,3 +155,16 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Nada
+
+------------------------
+## [1.0.14] - 2025-11-26
+### Adicionado
+- Guia noticias no #index
+- Melhora do #index para chamar atenção
+- Guia #parceiros inclusa no #index
+
+### Corrigido
+- Melhora de Desing em todas as guias
+
+### Removido
+- Nada
