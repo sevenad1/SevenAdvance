@@ -202,3 +202,14 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Banners antigos
+
+------------------------
+## [1.0.16] - 2025-11-26
+### Adicionado
+- Nada
+
+### Corrigido
+- Sistema de noticias
+
+### Removido
+- Arquivos JSON para noticias
