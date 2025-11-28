@@ -280,3 +280,14 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Nada
+
+------------------------
+## [1.0.22] - 2025-11-28
+### Adicionado
+- Suporte via whatsapp
+
+### Corrigido
+- Nada
+
+### Removido
+- Nada
