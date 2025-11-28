@@ -66,11 +66,11 @@
 				opacity: 1;
 				z-index: 2;
 			}
-			@media (max-width: 800px) {
-				.banner {
-					height: 240px;
-				}
+				
+			.banner {
+				height: 240px;
 			}
+			
 			@media (max-width: 500px) {
 				.banner {
 					height: 170px;
@@ -268,6 +268,26 @@
 		margin-bottom: 32px;
 		border-radius: 50px;
 	}
+	.video-responsive {
+		width: 100%;
+		max-width: 400px;
+		border-radius: 36px;
+		object-fit: cover;
+		display: block;
+		aspect-ratio: 9/16;
+		height: auto;
+		margin: 0 auto;
+		background: #000;
+	}
+	@media (max-width: 400px) {
+		.video-responsive {
+			aspect-ratio: 9/16;
+			max-width: 95vw;
+			height: auto;
+			min-width: 220px;
+			max-height: 80vh;
+		}
+	}
 	</style>
 	</head>
 	<meta charset="UTF-8">
@@ -323,8 +343,13 @@
 				</article>
 			</div>
 		</section>
-		<div id="video">
-			<video src="img/Video seven.mp4" controls></video>
+		<div id="video" class="video-wrapper">
+			<video controls class="video-responsive">
+				<source src="img/Video-seven-1080p.mp4" type="video/mp4" media="(min-width:900px)">
+				<source src="img/Video-seven-720p.mp4" type="video/mp4" media="(min-width:600px)">
+				<source src="img/Video seven.mp4" type="video/mp4">
+				Seu navegador não suporta vídeo HTML5.
+			</video>
 		</div>
 		<section class="cursos">
 			<div class="curso">

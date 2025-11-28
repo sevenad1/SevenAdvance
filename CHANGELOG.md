@@ -258,3 +258,14 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Nada
+
+------------------------
+## [1.0.20] - 2025-11-28
+### Adicionado
+- Nada
+
+### Corrigido
+- Rotação vertical cancelado
+
+### Removido
+- Nada
