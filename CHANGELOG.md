@@ -291,3 +291,15 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Nada
+
+------------------------
+## [1.0.23] - 2025-11-28
+### Adicionado
+- Nada
+
+### Corrigido
+- Suporte via whatsapp em todas as abas
+
+### Removido
+- Nada
+

@@ -96,7 +96,17 @@
         <div id="creditos-site" style="margin-top:18px; text-align:center; font-size:0.95em; color:#888;">
 			   <span>Criado por <strong>Otávio Lemos Morais</strong> e <strong>Ildo José Pertile</strong></span>
 	       </div>
-    </footer>
+        </footer>
+        <!-- Botão WhatsApp flutuante -->
+        <button id="whatsapp-float" aria-label="WhatsApp" style="position:fixed;right:24px;bottom:24px;z-index:9999;background:#25d366;border:none;border-radius:50%;width:60px;height:60px;box-shadow:0 4px 16px rgba(0,0,0,0.18);display:flex;align-items:center;justify-content:center;cursor:pointer;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" style="width:36px;height:36px;display:block;" />
+        </button>
+        <div id="whatsapp-modal" style="display:none;position:fixed;right:24px;bottom:92px;z-index:9999;background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,0.18);padding:22px 18px;max-width:320px;width:90vw;">
+            <div style="font-weight:600;color:#25d366;margin-bottom:8px;font-size:1.08em;">Em que posso te ajudar hoje?</div>
+            <textarea id="whatsapp-msg" rows="3" placeholder="Digite sua mensagem..." style="width:100%;resize:none;padding:8px 10px;border-radius:8px;border:1px solid #ccc;font-size:1em;margin-bottom:10px;"></textarea>
+            <button id="whatsapp-send" style="background:#25d366;color:#fff;border:none;border-radius:8px;padding:8px 0;width:100%;font-weight:600;cursor:pointer;">Enviar pelo WhatsApp</button>
+            <button id="whatsapp-close" style="background:none;border:none;color:#888;font-size:1.3em;position:absolute;top:8px;right:14px;cursor:pointer;">&times;</button>
+        </div>
 <script>
 // Menu responsivo individual
 document.addEventListener('DOMContentLoaded', function() {
@@ -123,6 +133,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+    // Botão WhatsApp flutuante
+    document.addEventListener('DOMContentLoaded', function() {
+        var btnFloat = document.getElementById('whatsapp-float');
+        var modal = document.getElementById('whatsapp-modal');
+        var btnSend = document.getElementById('whatsapp-send');
+        var btnClose = document.getElementById('whatsapp-close');
+        var textarea = document.getElementById('whatsapp-msg');
+        if(btnFloat && modal) {
+            btnFloat.addEventListener('click', function() {
+                modal.style.display = 'block';
+                textarea.focus();
+            });
+            btnClose.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+            btnSend.addEventListener('click', function() {
+                var texto = textarea.value.trim();
+                if(texto.length > 0) {
+                    var url = 'https://wa.me/5545998188316?text=' + encodeURIComponent(texto);
+                    window.open(url, '_blank');
+                    modal.style.display = 'none';
+                    textarea.value = '';
+                } else {
+                    textarea.focus();
+                }
+            });
+        }
+    });
 </script>
 </footer>
 <script src="js/menu-responsivo.js"></script>
