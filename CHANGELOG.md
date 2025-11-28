@@ -269,3 +269,14 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Nada
+
+------------------------
+## [1.0.21] - 2025-11-28
+### Adicionado
+- Caixa de suguestão
+
+### Corrigido
+- Horário de funcionamento
+
+### Removido
+- Nada

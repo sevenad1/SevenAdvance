@@ -338,7 +338,7 @@
 				<!-- Para adicionar mais notícias, copie e edite o bloco abaixo -->
 				<article class="noticia" tabindex="0">
 					<h3>Férias Coletivas</h3>
-					<p>É hora de uma pausa merecida! A partir de <strong>19/12/2025 até 12/01/2026</strong>, todos terão um tempo para descansar, recarregar as energias e voltar com ainda mais motivação. Aproveite</p>
+					<p>É hora de uma pausa merecida! A partir de <strong>19/12/2025 até 11/01/2026</strong>, todos terão um tempo para descansar, recarregar as energias e voltar com ainda mais motivação. Aproveite</p>
 					<span class="data-noticia">26/11/2025</span>
 				</article>
 			</div>
@@ -368,12 +368,21 @@
 					<br>
 					Sexta: 08:00 às 18:00
 					<br>
-					Sábado: 08:00 às 18:00
+					Sábado: 08:00 às 16:00
 					<br>
 					Domingo: Sem Atendimento
 					<br>
 				</div>
 			</div>
+		</section>
+		<!-- Caixinha de Sugestões -->
+		<section class="sugestoes-box" style="max-width:420px;margin:32px auto 0 auto;padding:24px 18px;background:#f7f7fa;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+			<h2 style="text-align:center;color:#1a237e;margin-bottom:12px;">Sugestões</h2>
+			<form id="form-sugestao" autocomplete="off" style="display:flex;flex-direction:column;gap:12px;">
+				<textarea id="sugestao" rows="3" placeholder="Digite sua sugestão aqui..." style="resize:none;padding:10px 12px;border-radius:8px;border:1px solid #ccc;font-size:1em;"></textarea>
+				<button type="submit" style="background:#ff9800;color:#fff;border:none;border-radius:8px;padding:8px 0;font-weight:600;cursor:pointer;">Enviar</button>
+			</form>
+			<div id="sugestao-confirm" style="display:none;margin-top:10px;color:#388e3c;text-align:center;font-weight:500;"></div>
 		</section>
 		<main>
 			<h2 id="parceiros">Instituições Parceiras</h2>
@@ -412,6 +421,30 @@
 			</div>
 		</footer>
 		<script>
+		// Sugestão: exibe mensagem ao enviar
+		document.addEventListener('DOMContentLoaded', function() {
+			var formSugestao = document.getElementById('form-sugestao');
+			var textarea = document.getElementById('sugestao');
+			var confirmBox = document.getElementById('sugestao-confirm');
+			if(formSugestao) {
+				formSugestao.addEventListener('submit', function(e) {
+					e.preventDefault();
+					var texto = textarea.value.trim();
+					if(texto.length > 0) {
+						var url = 'https://wa.me/5545998188316?text=' + encodeURIComponent(texto);
+						window.open(url, '_blank');
+						confirmBox.textContent = 'Abrindo WhatsApp...';
+						confirmBox.style.display = 'block';
+						textarea.value = '';
+						setTimeout(function(){ confirmBox.style.display = 'none'; }, 3500);
+					} else {
+						confirmBox.textContent = 'Digite algo antes de enviar.';
+						confirmBox.style.display = 'block';
+						setTimeout(function(){ confirmBox.style.display = 'none'; }, 2000);
+					}
+				});
+			}
+		});
 			// --- JAVASCRIPT ---
 			document.addEventListener('DOMContentLoaded', function() {
 				// Menu responsivo
