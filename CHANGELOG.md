@@ -303,3 +303,13 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 ### Removido
 - Nada
 
+------------------------
+## [1.0.24] - 2025-11-28
+### Adicionado
+- Grade de cursos
+
+### Corrigido
+- Nada
+
+### Removido
+- Nada
