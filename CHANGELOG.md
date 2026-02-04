@@ -313,3 +313,14 @@ Todas as alterações relevantes deste projeto serão listadas aqui.
 
 ### Removido
 - Nada
+
+------------------------
+## [1.0.25] - 2026-02-04
+### Adicionado
+- App da Seven agora disponivel
+
+### Corrigido
+- Direitos Autorais corrigidos para 2017 até 2026 em diante
+
+### Removido
+- Nada
