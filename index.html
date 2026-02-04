@@ -309,17 +309,17 @@
 					<li><a href="quem-somos.html">Quem Somos</a></li>
 					<li><a href="cursos.html">Cursos</a></li>
 					<li><a href="parceiros.html">Parceiros</a></li>
-					<li><a href="app.html">App</a></li>
+					<li><a href="https://loginalunos.page.gd" target="_self">App</a></li>
 					<li><a href="contato.html">Contato</a></li>
 				</ul>
 			</nav>
 			<h1>Seven Advance</h1>
 			<p>Especialistas em cursos</p>
-			<a href="https://wa.me/5545998188316?text=Ol%C3%A1%2C%20Gostaria%20de%20fazer%20a%20matricula!"
-			target="_blank" rej="noopener noreferrer" class="btn-matricula">
-				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="margin-right:8px;vertical-align:middle;" fill="none" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="4" fill="#fff"/><rect x="6" y="5" width="12" height="14" rx="2" fill="#ff9800"/><rect x="8" y="7" width="8" height="2" rx="1" fill="#fff"/><rect x="8" y="11" width="8" height="2" rx="1" fill="#fff"/><rect x="8" y="15" width="5" height="2" rx="1" fill="#fff"/></svg>
-				Fazer Matrícula
-			</a>
+			   <a href="https://wa.me/5545998188316?text=Ol%C3%A1%2C%20Gostaria%20de%20fazer%20a%20matricula!"
+			   target="_blank" rej="noopener noreferrer" class="btn-matricula">
+				   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="margin-right:8px;vertical-align:middle;" fill="none" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="4" fill="#fff"/><rect x="6" y="5" width="12" height="14" rx="2" fill="#ff9800"/><rect x="8" y="7" width="8" height="2" rx="1" fill="#fff"/><rect x="8" y="11" width="8" height="2" rx="1" fill="#fff"/><rect x="8" y="15" width="5" height="2" rx="1" fill="#fff"/></svg>
+				   Fazer Matrícula
+			   </a>
 		</header>
 		<!-- Setor de Banners -->
 		<div class="banner">
@@ -336,10 +336,13 @@
 			<h2>Notícias & Avisos</h2>
 			<div class="noticias-lista">
 				<!-- Para adicionar mais notícias, copie e edite o bloco abaixo -->
-				<article class="noticia" tabindex="0">
-					<h3>Férias Coletivas</h3>
+				 <!-- <h3>Férias Coletivas</h3>
 					<p>É hora de uma pausa merecida! A partir de <strong>19/12/2025 até 11/01/2026</strong>, todos terão um tempo para descansar, recarregar as energias e voltar com ainda mais motivação. Aproveite</p>
-					<span class="data-noticia">26/11/2025</span>
+					<span class="data-noticia">26/11/2025</span> -->
+				<article class="noticia" tabindex="0">
+					<h3>Feriado de Carnaval</h3>
+					<p>Prezados(as), Informamos que, em virtude do feriado de Carnaval, <strong>estaremos em recesso nos dias 14, 15, 16 e 17 de fevereiro de 2026</strong>. As aulas retornarão normalmente a partir do dia 18/02/2026. Desejamos a todos um ótimo feriado e contamos com a presença de vocês no retorno das atividades. Atenciosamente, Seven Advance.</p>
+					<span class="data-noticia">05/02/2026</span>
 				</article>
 			</div>
 		</section>
@@ -431,6 +434,28 @@
 			</div>
 		</footer>
 		<script>
+						// Exibe mensagem quando não houver notícias
+						document.addEventListener('DOMContentLoaded', function() {
+							var noticiasLista = document.querySelector('.noticias-lista');
+							if (noticiasLista && noticiasLista.children.length === 0) {
+								var msg = document.createElement('div');
+								msg.textContent = 'Nenhuma notícia no momento';
+								msg.style.color = '#888';
+								msg.style.fontSize = '0.98em';
+								msg.style.textAlign = 'center';
+								msg.style.padding = '18px 0';
+								noticiasLista.appendChild(msg);
+							}
+						});
+				// Função para avaliar a empresa no Google Maps
+				document.addEventListener('DOMContentLoaded', function() {
+					var btnAvaliar = document.getElementById('btn-avaliar-google');
+					if(btnAvaliar) {
+						btnAvaliar.addEventListener('click', function() {
+							window.open('https://www.google.com/maps/place/Seven+Advance/@-24.963857,-53.478011,17z/data=!4m8!3m7!1s0x94f3b5e2e2e2e2e2:0x1234567890abcdef!8m2!3d-24.963857!4d-53.478011!9m1!1b1!16s%2Fg%2F11c5z_7w7d?entry=ttu', '_blank');
+						});
+					}
+				});
 		// Botão WhatsApp flutuante
 		document.addEventListener('DOMContentLoaded', function() {
 			var btnFloat = document.getElementById('whatsapp-float');
