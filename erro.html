@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Erro</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+	<style>
+		.erro-container {
+			max-width: 420px;
+			margin: 60px auto 0 auto;
+			background: #fff;
+			border-radius: 18px;
+			box-shadow: 0 4px 24px rgba(26,35,126,0.13);
+			padding: 36px 28px;
+			text-align: center;
+		}
+		.erro-icon {
+			font-size: 3.5em;
+			color: #ff9800;
+			margin-bottom: 18px;
+		}
+		.erro-titulo {
+			color: #1a237e;
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 12px;
+		}
+		.erro-msg {
+			color: #333;
+			font-size: 1.15em;
+			margin-bottom: 22px;
+		}
+		.erro-personalizar {
+			margin-top: 18px;
+			color: #888;
+			font-size: 1em;
+		}
+		.btn-voltar {
+			background: linear-gradient(90deg, #ff9800 80%, #ffa726 100%);
+			color: #fff;
+			font-weight: 600;
+			border: none;
+			border-radius: 16px;
+			padding: 10px 28px;
+			font-size: 1.08em;
+			text-decoration: none;
+			box-shadow: 0 4px 16px rgba(255,140,0,0.15);
+			cursor: pointer;
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+			outline: none;
+			margin-top: 16px;
+		}
+		.btn-voltar:hover {
+			background: linear-gradient(90deg, #e67c00 80%, #ff9800 100%);
+			box-shadow: 0 6px 24px rgba(255,140,0,0.22);
+			transform: translateY(-2px) scale(1.03);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="logo"> 
+				<img src="img/Logo.png" alt="Logo Seven Advance Cascavel" style="height:40px;width:40px;border-radius:50%;object-fit:cover;">
+                <span style="margin-left:10px;font-weight:bold;">Seven Advance</span>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="erro-container">
+			<div class="erro-icon" id="erroIcon">&#128187;</div>
+			<div class="erro-titulo">Erro no Computador</div>
+			<div class="erro-msg">Ocorreu um problema inesperado.<br>Por favor, não use este dispositivo. <br>Use outra maquina!</div>
+		</div>
+		<script>
+		// Alterna entre computador e alerta
+		const erroIcon = document.getElementById('erroIcon');
+		let estado = true;
+		setInterval(() => {
+			if (estado) {
+				erroIcon.innerHTML = '&#9888;';
+				erroIcon.style.color = '#ff9800'; // amarelo
+			} else {
+				erroIcon.innerHTML = '&#128187;';
+				erroIcon.style.color = '#ff9800'; // laranja
+			}
+			estado = !estado;
+		}, 1200);
+		</script>
+	</main>
+    <br><br><br><br><br><br><br><br>
+	<footer>
+		&copy; 2017-2026 Seven Advance. Todos os direitos reservados.
+	</footer>
+</body>
+</html>
