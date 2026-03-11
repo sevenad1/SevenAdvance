@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guia Imprópria</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+	<style>
+		.guia-container {
+			max-width: 420px;
+			margin: 60px auto 0 auto;
+			background: #fff;
+			border-radius: 18px;
+			box-shadow: 0 4px 24px rgba(26,35,126,0.13);
+			padding: 36px 28px;
+			text-align: center;
+		}
+		.guia-icon {
+			font-size: 3.5em;
+			color: #e53935;
+			margin-bottom: 18px;
+		}
+		.guia-titulo {
+			color: #b71c1c;
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 12px;
+		}
+		.guia-msg {
+			color: #333;
+			font-size: 1.15em;
+			margin-bottom: 22px;
+		}
+		.btn-voltar {
+			background: linear-gradient(90deg, #e53935 80%, #ff7043 100%);
+			color: #fff;
+			font-weight: 600;
+			border: none;
+			border-radius: 16px;
+			padding: 10px 28px;
+			font-size: 1.08em;
+			text-decoration: none;
+			box-shadow: 0 4px 16px rgba(229,57,53,0.15);
+			cursor: pointer;
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+			outline: none;
+			margin-top: 16px;
+		}
+		.btn-voltar:hover {
+			background: linear-gradient(90deg, #b71c1c 80%, #e53935 100%);
+			box-shadow: 0 6px 24px rgba(229,57,53,0.22);
+			transform: translateY(-2px) scale(1.03);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="logo"> 
+				<img src="img/Logo.png" alt="Logo Seven Advance Cascavel" style="height:40px;width:40px;border-radius:50%;object-fit:cover;">
+                <span style="margin-left:10px;font-weight:bold;">Seven Advance</span>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="guia-container">
+			<div class="guia-icon" id="guiaIcon">&#128683;</div>
+			<div class="guia-titulo">Guia Imprópria</div>
+			<div class="guia-msg">Esta guia não deve ser utilizada.<br>Por favor, feche esta aba e retorne a seus estudos.</div>
+		</div>
+		<script>
+		// Alterna entre ícone de bloqueio e alerta
+		const guiaIcon = document.getElementById('guiaIcon');
+		let estado = true;
+		setInterval(() => {
+			if (estado) {
+				guiaIcon.innerHTML = '&#9888;';
+				guiaIcon.style.color = '#e53935'; // vermelho
+			} else {
+				guiaIcon.innerHTML = '&#128683;';
+				guiaIcon.style.color = '#e53935'; // vermelho
+			}
+			estado = !estado;
+		}, 1200);
+		</script>
+	</main>
+    <br><br><br><br><br><br><br><br>
+	<footer>
+		&copy; 2017-2026 Seven Advance. Todos os direitos reservados.
+	</footer>
+</body>
+</html>
